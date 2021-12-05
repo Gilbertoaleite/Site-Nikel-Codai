@@ -21,6 +21,11 @@ header {
 .color-secondary {
 	color: #4c79d3;
 }
+.icon-detail {
+	font-size: 50px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
 
 .text-login {
 	color: #ffffff;
@@ -38,7 +43,14 @@ header {
 	width: 50%;
 	margin: 0 25%;
 }
-.button-login:hover {
+.button-default {
+	background-color: #4e0070;
+	color: #ffffff;
+	border-radius: 10px;
+}
+
+.button-login:hover,
+.button-default:hover {
 	background-color: #4c79d3;
 	color: #ffffff;
 }
@@ -59,4 +71,9 @@ a:hover {
 }
 #sair {
 	display: inline-flex;
+}
+.info {
+	background-color: #ffffff;
+	border-radius: 20px 20px 0px 0px;
+	padding: 20px 0px 0px 0px;
 }
