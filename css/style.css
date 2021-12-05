@@ -62,12 +62,13 @@ header {
 	color: #4c79d3;
 }
 a {
-	color: #ffffff;
+	color: #4e0070;
 	margin: 16px;
 	text-decoration: none;
+	font-weight: 20px;
 }
 a:hover {
-	color: #4e0070;
+	color: orange;
 }
 #sair {
 	display: inline-flex;
