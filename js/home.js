@@ -146,7 +146,7 @@ function getCashOut() {
 }
 function getTotal() {
 	const transactions = data.transactions;
-	let total = 100;
+	let total = 0;
 
 	transactions.forEach((item) => {
 		if (item.type === '1') {
