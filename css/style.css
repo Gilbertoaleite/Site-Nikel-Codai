@@ -10,7 +10,6 @@
 }
 header {
 	border-bottom: 1px solid #bebcbc;
-	padding: 5px 50px;
 	background-color: #ffffff;
 }
 
@@ -106,4 +105,12 @@ footer {
 	position: fixed;
 	bottom: 0;
 	left: 0;
+}
+
+.logout {
+	min-width: 5rem !important;
+}
+
+.menu {
+	margin-right: 20px;
 }

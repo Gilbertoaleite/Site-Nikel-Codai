@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -28,7 +28,7 @@
 					 <span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-					<div class="d-flex">
+					<div class="d-flex menu">
 						<a href="home.html"><button class="btn" type="button"><i class="bi bi-house-door-fill fs-4 color-secondary"></i></button>
 							
 						</a> 
@@ -38,8 +38,8 @@
 							<button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 								<i class="bi bi-person-circle fs-4"></i>
 							</button>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-							  <li><a class="dropdown-item" href="index.html">Sair</a></li>
+							<ul class="dropdown-menu logout" aria-labelledby="dropdownMenuButton1">
+							  <li><button class="dropdown-item" id="button-logout">Sair</button></li>
 							</ul>
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 				<div class="row">
 					<div class="col d-flex mt-4 justify-content-start align-items-center">
 						<i class="bi bi-cash-coin color-primary icon-detail fs-1"></i>
-								<span class="fs-2">R$500,00</span>
+								<span class="fs-2" id="total">R$ 0.00</span>
 
 					</div>
 					<div class="col d-flex mt-4 justify-content-end">
@@ -80,27 +80,18 @@
 										</div>
 										<div class="row">
 											<div class="col-6">
-												<div class="container">
-													<div class="row">
-														<div class="col">
-															R$ 100,00
-														</div>
-													</div>
+												<div class="container p-0" id="cash-in-list">
+													
 
 												</div>
 											</div>
 											<div class="col-6">
-												<div class="container">
-													<div class="row">
-														<div class="col">
-															R$ 350,00
-														</div>
-													</div>
+												<div class="container p-0" id="cash-out-list">
 
 												</div>
 
 											</div>
-											<div class="col-12"><button class="btn button-default" data-bs-toggle="modal" data-bs-target="#register-modal" >Ver todas</button></div>
+											<div class="col-12 mb-5"><button class="btn button-default" data-bs-toggle="modal" data-bs-target="#register-modal" id="transaction-button" >Ver todas</button></div>
 										</div>
 									</div>
 								</div>
@@ -129,7 +120,7 @@
 		type="number"
 		class="form-control"
 		id="value-input"
-		aria-describedby="emailHelp"
+		aria-describedby="emailHelp"required
 	/>
 	
 </div>
@@ -140,7 +131,7 @@
 	<input
 		type="text"
 		class="form-control"
-		id="description-input"
+		id="description-input" required
 	/>
 	
 	</div>
@@ -152,7 +143,7 @@
 			<input
 				type="date"
 				class="form-control"
-				id="date-input"
+				id="date-input"required
 			/>
 			<div class="mb-3">
 				<div class="form-check form-check-inline">
@@ -177,8 +168,8 @@
  </div>
 	</main>
 	
-	<script src="js/main.js"></script>
+	<script src="js/home.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	</body>
-	<footer > <a title="Meu portfólio" rel="noreferrer noopener" target="_blank"  href="https://gilbertoaleite-portfolio.netlify.app/">Desenvolvido por: Gilberto A Leite</a></footer>
+	<!-- <footer > <a title="Meu portfólio" rel="noreferrer noopener" target="_blank"  href="https://gilbertoaleite-portfolio.netlify.app/">Desenvolvido por: Gilberto A Leite</a></footer> -->
 </html>
